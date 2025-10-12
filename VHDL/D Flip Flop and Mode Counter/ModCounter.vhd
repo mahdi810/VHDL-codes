@@ -15,22 +15,6 @@ architecture bhv of ModCounter is
     signal r_next : unsigned(N-1 downto 0) := (others => '0'); 
 
 begin 
-    -- counter_p : process(clk, reset)
-    -- begin 
-    --     if rising_edge(clk) then 
-    --         if reset = '1' then 
-    --             counter <= (others => '0'); 
-    --             max_tick <= '0'; 
-    --         else 
-    --             if counter < to_unsigned(M, N-1) then 
-    --                 counter <= counter + 1; 
-    --                 if counter = to_unsigned(M, N-1) then 
-    --                     max_tick <= '1'; 
-    --                 end if; 
-    --             end if; 
-    --         end if; 
-    --     end if; 
-    -- end process counter_p; 
 
     --registers 
     seq_p : process(clk, reset)
