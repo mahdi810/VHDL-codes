@@ -33,7 +33,6 @@ begin
     a <= '1'; 
     b <= '1'; 
     wait for clk_periode; 
-
     wait; 
 end process stim_p; 
 

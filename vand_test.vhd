@@ -12,5 +12,4 @@ architecture rtl of vand_test is
 
 begin 
     c <= a AND b; 
-
 end rtl; 
