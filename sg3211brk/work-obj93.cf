@@ -1,0 +1,7 @@
+v 4
+file . "sg3211brk_tb.vhd" "7d7b677cefaf7c63262062dac46a54c674d55ebb" "20250603215436.038":
+  entity sg3211brk_tb at 1( 0) + 0 on 57;
+  architecture behavioural of sg3211brk_tb at 7( 90) + 0 on 58;
+file . "sg3211brk.vhd" "41d6880a7c65e2ab06cca445ea64a87832499e65" "20250603215435.947":
+  entity sg3211brk at 7( 292) + 0 on 55;
+  architecture behavioural of sg3211brk at 20( 553) + 0 on 56;

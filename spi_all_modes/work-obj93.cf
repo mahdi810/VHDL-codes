@@ -1,0 +1,7 @@
+v 4
+file . "spia_tb.vhd" "233f23c45e3e74bcc90e32faa31779f50866c51c" "20251001215443.661":
+  entity spia_tb at 1( 0) + 0 on 17;
+  architecture bhv of spia_tb at 8( 113) + 0 on 18;
+file . "spia.vhd" "85a98c6b78fbcbdb4f9701f5aecf9dbbb072a8f0" "20251001215443.571":
+  entity spia at 2( 41) + 0 on 15;
+  architecture bhv of spia at 20( 670) + 0 on 16;
