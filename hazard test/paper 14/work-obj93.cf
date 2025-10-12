@@ -1,0 +1,7 @@
+v 4
+file . "hz.vhd" "f295385f7f2b3b84ba16ec4a97f7427dbba0eb6a" "20250826130347.625":
+  entity hz0 at 1( 0) + 0 on 15;
+  architecture structural of hz0 at 12( 178) + 0 on 16;
+file . "hz_tb.vhd" "8c671a9021185ba7d83f30429df66c2d9d848841" "20250826130347.626":
+  entity hz_tb at 1( 0) + 0 on 17;
+  architecture structural of hz_tb at 8( 110) + 0 on 18;

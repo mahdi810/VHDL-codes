@@ -1,0 +1,92 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Home/HochschuleBremerhaven2025/VHDL/vhdl using vscode/fibo_test
+Efibo
+Z0 w1757885518
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 dC:/Home/HochschuleBremerhaven2025/VHDL/vhdl using vscode/fibo_test2
+Z5 8C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo.vhd
+Z6 FC:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo.vhd
+l0
+L6
+VEg<=`<>H[K9@joTkYL@f81
+!s100 T]>M86[NzPe<2m98<eL6H0
+Z7 OV;C;10.5c;63
+32
+Z8 !s110 1757885523
+!i10b 1
+Z9 !s108 1757885523.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo.vhd|
+Z11 !s107 C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R1
+R2
+R3
+DEx4 work 4 fibo 0 22 Eg<=`<>H[K9@joTkYL@f81
+l21
+L15
+V^LnCAQ]gQgKaHzU7a_7Vd0
+!s100 Y<djJOKS@i603:b<J>Tbm2
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efibo_tb
+Z14 w1757884472
+R1
+R2
+R3
+R4
+Z15 8C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo_tb.vhd
+Z16 FC:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo_tb.vhd
+l0
+L6
+VS3FW4iBCMP?gQkF>BhGX:3
+!s100 V?=5LFICaDfmL;alF=:j41
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo_tb.vhd|
+Z18 !s107 C:\Home\HochschuleBremerhaven2025\VHDL\vhdl using vscode\fibo_test2\fibo_tb.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R3
+Z19 DEx4 work 7 fibo_tb 0 22 S3FW4iBCMP?gQkF>BhGX:3
+l25
+L9
+Z20 Vm:5S7Pl9ZHc01?B9]2ZE90
+Z21 !s100 9CiiD]z9SO^N;=E43L_MA0
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
