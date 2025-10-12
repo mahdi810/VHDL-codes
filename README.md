@@ -1,1 +1,1 @@
-In this repository VHDL code are going to be added. 
+In this repository VHDL and Verilog code are going to be added. 
