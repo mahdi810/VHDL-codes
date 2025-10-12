@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------
--- Engineer: Mohammad Mahdi Mohammadi & Mohammad Reza Rahimi 
+-- Engineer: Mohammad Mahdi Mohammadi
 
 -- Create Date: 06/03/2025 11:49:47 AM
 -- Module Name: spicpol0cph1 - Behavioral
