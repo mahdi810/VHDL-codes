@@ -1,7 +1,0 @@
-v 4
-file . "fibo_tb.vhd" "68099d1642f0e7c7934e092824d4a384a4ccae9a" "20250916110906.665":
-  entity fibo_tb at 1( 0) + 0 on 13;
-  architecture rtl of fibo_tb at 8( 114) + 0 on 14;
-file . "fibo.vhd" "e8a2e71264566b14ef546287a029098a160641a1" "20250916110906.665":
-  entity fibo at 1( 0) + 0 on 11;
-  architecture rtl of fibo at 14( 320) + 0 on 12;
