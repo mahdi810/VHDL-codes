@@ -1,76 +1,137 @@
--- Engineer : Mohammad Mahdi Mohammadi 
---This program compute the exp(u_in) = (1 +u/2)/(1 - u/2) based on the repetative iteration method, which is an approximation method. ; 
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: Mohammad Mahdi Mohammadi
+-- 
+-- Create Date: 10/12/2025 11:59:59 PM
+-- Design Name: 
+-- Module Name: fsmexp - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
-library IEEE; 
-use IEEE.STD_LOGIC_1164.ALL; 
-use IEEE.NUMERIC_STD.ALL; 
 
-entity fsmexp is 
-    port( u_in  : in std_logic_vector(15 downto 0); 
-          u_out : out std_logic_vector(15 downto 0); 
-          clk   : in std_logic; 
-          start : in std_logic; 
-          reset : in std_logic; 
-          done  : out std_logic ); 
-end fsmexp; 
+--this program computes the exponential function y = exp(u) using the itertive methode. 
+--if y0 < 0 then 
+    --y <= y0 - 2^(-k)*x0 
+    --z <= z0 - 2^(-k)
+--else 
+    --y <= y0 + 2^(-k)*x0 
+    --z <= z0 + 2^(-k)
+--end if; 
+--the above equations shows the basic algorithm for the computation of the exponential function. 
 
-architecture behavioural of fsmexp is 
-    type my_state is (idle, init, iter, final); 
-    signal state, next_state : my_state; 
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity fsmexp is
+    generic (it_no : integer := 10);
+    port (clk   : in std_logic;
+          start : in std_logic;
+          done  : out std_logic;
+          reset : in std_logic;
+          u_in  : in std_logic_vector(15 downto 0);
+          u_out : out std_logic_vector(15 downto 0) );
+end entity;
+
+architecture bhv of fsmexp is
+    type state_type is (idle, init, it1, it2, final);
+    signal state, next_state : state_type;
+    
+    signal k_i, k_i_next : integer := 0; 
     subtype int16_t is integer range -32768 to 32767; 
-    subtype int32_t is integer range -2147483648 to 2147483647; 
-    constant fract : integer := 9; 
+    constant fract : integer := 13; 
+    
+    signal u_in_i : int16_t:= 0;
+    signal x0, x0_next : int16_t:= 0;
+    signal y0, y0_next : int16_t:= 0;
+    signal z0, z0_next : int16_t:= 0;
 
-    signal uu_in, uu_out, y0, x0, z0 : int16_t; 
-    signal k : integer range 0 to 7; 
-begin 
-    u_out <= std_logic_vector(to_signed(uu_out, u_out'lenght)); 
+begin
+    u_in_i <= to_integer(unsigned(u_in)); 
 
-    seq_p : PROCESS(clk)
-    BEGIN 
-        if rising_edge(clk) then 
-            if reset = 1 then 
-                state <= idle; 
-            else 
-                state <= next_state; 
+    --the sequential process
+    seq_p : process(clk, reset)
+    begin
+        if rising_edge(clk) then
+            if reset = '1' then
+                state <= idle;
+                k_i   <= 0;
+                x0  <= 0;
+                y0  <= 0;
+                z0  <= 0;
+            else
+                state <= next_state;
+                x0 <= x0_next; 
+                y0 <= y0_next; 
+                z0 <= z0_next; 
+                k_i <= k_i_next; 
             end if; 
         end if; 
-    END PROCESS seq_p; 
+    end process seq_p;
 
-    comb_p : PROCESS(start, state, y0, k)
-    BEGIN 
-        done <= '0'; 
+    --combinatin process
+    comb_p : process(state, start, next_state, x0_next, y0_next, z0_next, k_i)
+    begin 
+        done <= '0';
+        x0_next <= x0;
+        y0_next <= y0;
+        z0_next <= z0;
+        next_state <= state;
+        k_i_next <= k_i;
         case state is 
             when idle   => 
-                uu_in <= to_integer(to_signed(u_in)); 
+                done <= '1'; 
                 if start = '1' then 
-                    state <= idle; 
+                    next_state <= init; 
+                else 
+                    next_state <= idle; 
                 end if; 
             when init   =>
-                y0 <= 1 + uu_in/2; 
-                x0 <= 1 - uu_in/2; 
-                z0 <= 0; 
-                k  <= 0; 
-                state <= next_state; 
-            when iter   =>
-                if rising_edge(clk) then 
-                    if k<7 then 
-                        if y0 < 0 then 
-                            y0 <= y0 + 2**(-k) * x0;
-                            z0 <=  z0 - 2**(-k); 
-                        else 
-                            y0 <= y0 - 2**(-k) * x0;
-                            z0 <=  z0 + 2**(-k); 
-                        end if; 
-                        k <= k + 1; 
-                    end if; 
-                end if;
-                state <= next_state;  
-            when final  =>
-                done <= '1'; 
-                if start = 1 then 
-                    state <= idle; 
-                end if;
+                k_i_next <= 0; 
+                x0_next <= (2**fract)-(u_in_i/2);
+                y0_next <= (2**fract)+(u_in_i/2);
+                z0_next <= 0; 
+                if y0_next > 0 then 
+                    next_state <= it2; 
+                else 
+                    next_state <= it1; 
+                end if; 
+            when it1    =>
+                k_i_next <= k_i + 1;  
+                y0_next <= y0 + (x0/2**k_i);
+                z0_next <= z0 - (2**fract/2**(k_i));
+                if k_i_next = it_no then 
+                    next_state <= final; 
+                elsif y0_next > 0 then 
+                    next_state <= it2; 
+                else 
+                    next_state <= it1; 
+                end if;  
+            when it2    =>
+                k_i_next <= k_i + 1; 
+                y0_next <= y0 - (x0/(2**(k_i)));
+                z0_next <= z0 + (2**fract/2**(k_i));
+                if k_i_next = it_no then 
+                    next_state <= final;
+                elsif y0_next < 0 then 
+                    next_state <= it1;
+                else 
+                    next_state <= it2; 
+                end if; 
+            when final  => 
+                u_out <= std_logic_vector(to_signed(z0_next, u_out'length)); 
+                next_state <= idle; 
         end case; 
-    END PROCESS comb_p; 
-end behavioural; 
+    end process comb_p; 
+end bhv;
