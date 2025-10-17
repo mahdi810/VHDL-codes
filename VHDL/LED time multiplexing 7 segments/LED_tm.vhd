@@ -1,6 +1,6 @@
 --Engineer : Mohammad Mahdi Mohammadi 
---this circuit USEs time multiplexing to reduce the number of bit required for displaying the four 7 segement displays. 
---it USEs high frequency to turn each of the 7 segment display and make the illusion that.ALL of them are on at the same time. 
+--this circuit uses time multiplexing to reduce the number of bit required for displaying the four 7 segement displays. 
+--it uses high frequency to turn each of the 7 segment display and make the illusion that all of them are on at the same time. 
 
 LIBRARY  IEEE; 
 USE IEEE.std_logic_1164.ALL; 
