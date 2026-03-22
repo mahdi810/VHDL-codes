@@ -4,10 +4,10 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity tb_freq_divider is
+entity clkdiv_tb is
 end entity;
 
-architecture sim of tb_freq_divider is
+architecture sim of clkdiv_tb is
     -- Signals for connecting to DUT (Device Under Test)
     signal clk_tb       : std_logic := '0';
     signal reset_tb     : std_logic := '0';
@@ -19,7 +19,7 @@ begin
     ------------------------------------------------------------------------
     -- Instantiate the frequency divider
     ------------------------------------------------------------------------
-    uut: entity work.freq_divider
+    uut: entity work.clkdiv
         generic map(
             MAX_COUNT => 4  -- Small value for simulation
         )
