@@ -7,7 +7,7 @@ TOP = clkdiv
 TB = clkdiv_tb 
 WAVE = wave.ghw 
 WAVEPLOT = wave_plot.gtkw
-STOPTIME = 500ns
+STOPTIME = 2000ns
 
 #source files 
 SRCS = clkdiv.vhd clkdiv_tb.vhd 

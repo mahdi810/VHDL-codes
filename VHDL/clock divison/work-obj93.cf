@@ -1,0 +1,7 @@
+v 3
+file . "clkdiv.vhd" "20260322230618.000" "20260323000621.167":
+  entity clkdiv at 21( 483) + 0 on 47;
+  architecture behavioral of clkdiv at 33( 703) + 0 on 48;
+file . "clkdiv_tb.vhd" "20260322230608.000" "20260323000621.167":
+  entity clkdiv_tb at 21( 486) + 0 on 49;
+  architecture behavioral of clkdiv_tb at 28( 599) + 0 on 50;

@@ -1,57 +1,65 @@
--- Engineer : Mohammad Mahdi Mohammadi 
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/22/2026 11:30:21 PM
+-- Design Name: 
+-- Module Name: clkdiv_tb - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
 library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
 
 entity clkdiv_tb is
-end entity;
+end clkdiv_tb;
 
-architecture sim of clkdiv_tb is
-    -- Signals for connecting to DUT (Device Under Test)
-    signal clk_tb       : std_logic := '0';
-    signal reset_tb     : std_logic := '0';
-    signal pulse_rot_tb : std_logic;
-
-    -- Clock period (100 MHz  10 ns)
-    constant CLK_PERIOD : time := 10 ns;
-begin
-    ------------------------------------------------------------------------
-    -- Instantiate the frequency divider
-    ------------------------------------------------------------------------
-    uut: entity work.clkdiv
-        generic map(
-            MAX_COUNT => 4  -- Small value for simulation
-        )
-        port map(
-            clk       => clk_tb,
-            reset     => reset_tb,
-            pulse_rot => pulse_rot_tb
+architecture Behavioral of clkdiv_tb is
+    component clkdiv is
+        port (
+            clk : in std_logic;
+            reset : in std_logic;
+            clk_out : out std_logic
         );
+    end component clkdiv;
+    signal clk, clk_out, reset : std_logic := '0';
+    signal clk_period : time := 10 ns;
+begin
 
-    ------------------------------------------------------------------------
-    -- Clock generation
-    ------------------------------------------------------------------------
-    clk_process : process
+    --clock generation 
+    clk_p : process
     begin
-            clk_tb <= '0';
-            wait for CLK_PERIOD / 2;
-            clk_tb <= '1';
-            wait for CLK_PERIOD / 2;
-    end process;
+        clk <= '0';
+        wait for clk_period/2;
+        clk <= '1';
+        wait for clk_period/2;
+    end process clk_p;
 
-    ------------------------------------------------------------------------
-    -- Stimulus process
-    ------------------------------------------------------------------------
-    stim_proc : process
+    uut : clkdiv
+    port map(
+        clk => clk,
+        clk_out => clk_out,
+        reset => reset);
+
+    stim_p : process
     begin
-        -- Apply reset
-        reset_tb <= '1';
-        wait for 30 ns;
-        reset_tb <= '0';
+        reset <= '1';
+        wait for clk_period;
+        reset <= '0';
+        wait for clk_period * 20;
 
-        -- Let the simulation run
-        wait for 400 ns;
         wait;
-    end process;
-end architecture sim;
+    end process stim_p;
+
+end Behavioral;
