@@ -1,1 +1,0 @@
---incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "clk_div_behav" "xil_defaultlib.clk_div" -log "elaborate.log" 
