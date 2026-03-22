@@ -4,7 +4,7 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
 
-entity freq_divider is
+entity clkdiv is
     generic(
         MAX_COUNT : integer := 8333333  -- For 6 Hz from 100 MHz
     );
@@ -13,9 +13,9 @@ entity freq_divider is
         reset     : in  std_logic;      -- active-high reset
         pulse_rot : out std_logic       -- reduced frequency output
     );
-end entity freq_divider;
+end entity clkdiv;
 
-architecture rtl of freq_divider is
+architecture rtl of clkdiv is
     signal cnt     : integer range 0 to MAX_COUNT := 0;
     signal out_reg : std_logic := '0';
 begin
