@@ -4,7 +4,7 @@ use ieee.numeric_std.all;
 
 entity dff is 
     port ( clk, reset, d : in std_logic;  
-           q : out std_logic); 
+            q : out std_logic); 
 end entity; 
 
 
