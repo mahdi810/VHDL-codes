@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/clkdiv/clkdiv.srcs/sources_1/new/clkdiv.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clkdiv'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/clkdiv/clkdiv.srcs/sim_1/new/clkdiv_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clkdiv_tb'
