@@ -8,7 +8,7 @@
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
--- Description: 
+-- Description: using this file you can divide a clock by F = fclk / 2*(max_count + 1)
 -- 
 -- Dependencies: 
 -- 
