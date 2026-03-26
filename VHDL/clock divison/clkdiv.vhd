@@ -1,38 +1,56 @@
--- Engineer : Mohammad Mahdi Mohammadi 
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 03/23/2026 08:56:59 AM
+-- Design Name: 
+-- Module Name: clkdiv - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
 library IEEE;
-use IEEE.std_logic_1164.all;
-use IEEE.numeric_std.all;
+use IEEE.STD_LOGIC_1164.all;
+use ieee.numeric_std.all;
 
 entity clkdiv is
-    generic(
-        MAX_COUNT : integer := 8333333  -- For 6 Hz from 100 MHz
-    );
-    port(
-        clk       : in  std_logic;      -- 100 MHz clock
-        reset     : in  std_logic;      -- active-high reset
-        pulse_rot : out std_logic       -- reduced frequency output
-    );
-end entity clkdiv;
+    port (
+        clk : in std_logic;
+        reset : in std_logic;
+        clk_out : out std_logic);
+end clkdiv;
 
-architecture rtl of clkdiv is
-    signal cnt     : integer range 0 to MAX_COUNT := 0;
-    signal out_reg : std_logic := '0';
+architecture Behavioral of clkdiv is
+    signal clk_outi : std_logic := '0';
+    constant max_count : integer := 4;
+
 begin
-    process(clk, reset)
+    clk_div : process (clk, reset)
+        variable cnt : integer range 0 to max_count;
     begin
-        if reset = '1' then
-            cnt     <= 0;
-            out_reg <= '0';
-        elsif rising_edge(clk) then
-            if cnt = MAX_COUNT then
-                cnt     <= 0;
-                out_reg <= not out_reg;  -- toggle output
+        if rising_edge(clk) then
+            if reset = '1' then
+                cnt := 0;
+                clk_outi <= '0';
             else
-                cnt <= cnt + 1;
+                if cnt = 0 then
+                    clk_outi <= not clk_outi;
+                    cnt := max_count;
+                else
+                    cnt := cnt - 1;
+                end if;
             end if;
         end if;
-    end process;
+    end process clk_div;
+    clk_out <= clk_outi;
 
-    pulse_rot <= out_reg;
-end architecture rtl;
+end Behavioral;

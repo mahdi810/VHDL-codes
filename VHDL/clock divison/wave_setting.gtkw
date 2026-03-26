@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Mar 24 23:58:00 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\clock divison\wave.ghw"
+[dumpfile_mtime] "Tue Mar 24 23:57:32 2026"
+[dumpfile_size] 1146
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\clock divison\wave_setting.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-27.194695 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.clkdiv_tb.
+[sst_width] 211
+[signals_width] 86
+[sst_expanded] 1
+[sst_vpaned_height] 154
+@28
+top.clkdiv_tb.uut.clk
+top.clkdiv_tb.uut.reset
+@29
+top.clkdiv_tb.uut.clk_out
+[pattern_trace] 1
+[pattern_trace] 0

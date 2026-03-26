@@ -1,0 +1,10 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.1/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot fibs_tb_behav xil_defaultlib.fibs_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+ERROR: [XSIM 43-3249] File C:/HOME/github/vhd code github/VHDL_codes/using_vivado/Fibunacci_Series/Fibunacci_Series.srcs/sources_1/new/fibs.vhd, line 40. Unresolved signal "count" is multiply driven.
