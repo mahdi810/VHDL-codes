@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Fibunacci_Series.srcs/sources_1/new/fibs.vhd" \
+"../../../../Fibunacci_Series.srcs/sim_1/new/fibs_tb.vhd" \
+
+# Do not sort compile order
+nosort

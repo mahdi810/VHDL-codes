@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Mar 24 23:37:55 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\barrel shifter\wave.ghw"
+[dumpfile_mtime] "Tue Mar 24 23:36:17 2026"
+[dumpfile_size] 538
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\barrel shifter\wave_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -87 -87
+*-21.694004 1610000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.barrel_shifter_tb.
+[treeopen] top.barrel_shifter_tb.uut.
+[sst_width] 211
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@22
+#{top.barrel_shifter_tb.uut.a[7:0]} top.barrel_shifter_tb.uut.a[7] top.barrel_shifter_tb.uut.a[6] top.barrel_shifter_tb.uut.a[5] top.barrel_shifter_tb.uut.a[4] top.barrel_shifter_tb.uut.a[3] top.barrel_shifter_tb.uut.a[2] top.barrel_shifter_tb.uut.a[1] top.barrel_shifter_tb.uut.a[0]
+@28
+#{top.barrel_shifter_tb.uut.amt[2:0]} top.barrel_shifter_tb.uut.amt[2] top.barrel_shifter_tb.uut.amt[1] top.barrel_shifter_tb.uut.amt[0]
+@25
+#{top.barrel_shifter_tb.uut.y[7:0]} top.barrel_shifter_tb.uut.y[7] top.barrel_shifter_tb.uut.y[6] top.barrel_shifter_tb.uut.y[5] top.barrel_shifter_tb.uut.y[4] top.barrel_shifter_tb.uut.y[3] top.barrel_shifter_tb.uut.y[2] top.barrel_shifter_tb.uut.y[1] top.barrel_shifter_tb.uut.y[0]
+[pattern_trace] 1
+[pattern_trace] 0
