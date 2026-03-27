@@ -1,0 +1,7 @@
+v 3
+file . "bcd_counter_tb.vhd" "20260327005412.000" "20260327015649.405":
+  entity bcd_counter_tb at 1( 0) + 0 on 21;
+  architecture behavioral of bcd_counter_tb at 8( 128) + 0 on 22;
+file . "bcd_counter.vhd" "20260327005648.000" "20260327015649.405":
+  entity bcd_counter at 1( 0) + 0 on 19;
+  architecture behavioral of bcd_counter at 13( 249) + 0 on 20;
