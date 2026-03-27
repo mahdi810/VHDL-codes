@@ -1,0 +1,7 @@
+v 3
+file . "string_detector111.vhd" "20260327111504.000" "20260327121758.681":
+  entity string_detector111 at 1( 0) + 0 on 31;
+  architecture behavioral of string_detector111 at 13( 270) + 0 on 32;
+file . "string_detector111_tb.vhd" "20260327111700.000" "20260327121758.681":
+  entity string_detector111_tb at 1( 0) + 0 on 33;
+  architecture behavioral of string_detector111_tb at 8( 142) + 0 on 34;
