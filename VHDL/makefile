@@ -1,11 +1,12 @@
 GHDL = ghdl
 GTKWAVE = gtkwave
 
+TIME ?= 500
 DIR ?= .
 TOP ?= test
 TB  ?= $(TOP)_tb
 
-STOPTIME = 500ns
+STOPTIME = $(TIME)ns
 WAVE = wave.ghw
 WAVESETTING = wave_setting.gtkw
 
