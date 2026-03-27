@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Mar 27 00:53:56 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\bcd_counter\wave.ghw"
+[dumpfile_mtime] "Fri Mar 27 00:53:18 2026"
+[dumpfile_size] 591
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL\bcd_counter\wave_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -191 -186
+*-24.883642 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.bcd_counter_tb.
+[sst_width] 211
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+top.bcd_counter_tb.uut.clk
+top.bcd_counter_tb.uut.reset
+@420
+top.bcd_counter_tb.uut.state
+@421
+top.bcd_counter_tb.uut.next_state
+[pattern_trace] 1
+[pattern_trace] 0
