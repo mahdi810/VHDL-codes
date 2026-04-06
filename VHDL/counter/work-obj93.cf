@@ -1,0 +1,7 @@
+v 3
+file . "counter_tb.vhd" "20260406152926.000" "20260406173146.275":
+  entity counter_tb at 1( 0) + 0 on 13;
+  architecture fizzim of counter_tb at 8( 115) + 0 on 14;
+file . "counter.vhd" "20260406153144.000" "20260406173146.275":
+  entity counter at 3( 83) + 0 on 11;
+  architecture fizzim of counter at 15( 280) + 0 on 12;
