@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/fsm_resptst/fsm_resptst.srcs/sources_1/new/fsm_resptst.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm_resptst'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/fsm_resptst/fsm_resptst.srcs/sim_1/new/fsm_resptst_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm_resptst_tb'

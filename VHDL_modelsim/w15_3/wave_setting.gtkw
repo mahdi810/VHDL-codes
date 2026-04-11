@@ -1,0 +1,34 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Thu Apr 09 10:57:56 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\w15_3\wave.ghw"
+[dumpfile_mtime] "Thu Apr 09 10:57:40 2026"
+[dumpfile_size] 1376
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\w15_3\wave_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -1 -1
+*-25.377560 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.fsm3_tb.
+[treeopen] top.fsm3_tb.uut.
+[sst_width] 211
+[signals_width] 126
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+top.fsm3_tb.uut.clk
+top.fsm3_tb.uut.reset
+top.fsm3_tb.uut.enable
+@22
+#{top.fsm3_tb.uut.ctr_err[7:0]} top.fsm3_tb.uut.ctr_err[7] top.fsm3_tb.uut.ctr_err[6] top.fsm3_tb.uut.ctr_err[5] top.fsm3_tb.uut.ctr_err[4] top.fsm3_tb.uut.ctr_err[3] top.fsm3_tb.uut.ctr_err[2] top.fsm3_tb.uut.ctr_err[1] top.fsm3_tb.uut.ctr_err[0]
+@420
+top.fsm3_tb.uut.ctr_err_i
+top.fsm3_tb.uut.state
+@28
+top.fsm3_tb.uut.heat
+@29
+top.fsm3_tb.uut.cool
+[pattern_trace] 1
+[pattern_trace] 0

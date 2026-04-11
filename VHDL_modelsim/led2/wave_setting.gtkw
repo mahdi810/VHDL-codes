@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Tue Apr 07 20:06:18 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\led2\wave.ghw"
+[dumpfile_mtime] "Tue Apr 07 20:05:29 2026"
+[dumpfile_size] 2084
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\led2\wave_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -61 -61
+*-25.620607 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.led_fsm2_tb.
+[treeopen] top.led_fsm2_tb.uut.
+[sst_width] 211
+[signals_width] 110
+[sst_expanded] 1
+[sst_vpaned_height] 222
+@28
+top.led_fsm2_tb.clk
+top.led_fsm2_tb.reset
+top.led_fsm2_tb.b0
+#{top.led_fsm2_tb.uut.state[2:0]} top.led_fsm2_tb.uut.state[2] top.led_fsm2_tb.uut.state[1] top.led_fsm2_tb.uut.state[0]
+@29
+#{top.led_fsm2_tb.uut.l[2:0]} top.led_fsm2_tb.uut.l[2] top.led_fsm2_tb.uut.l[1] top.led_fsm2_tb.uut.l[0]
+[pattern_trace] 1
+[pattern_trace] 0
