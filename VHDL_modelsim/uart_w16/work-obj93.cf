@@ -1,0 +1,7 @@
+v 3
+file . "uart.vhd" "20260411205120.000" "20260411225125.179":
+  entity uart at 1( 0) + 0 on 47;
+  architecture bhv of uart at 14( 285) + 0 on 48;
+file . "uart_tb.vhd" "20260411203838.000" "20260411225125.179":
+  entity uart_tb at 1( 0) + 0 on 49;
+  architecture bhv of uart_tb at 8( 109) + 0 on 50;

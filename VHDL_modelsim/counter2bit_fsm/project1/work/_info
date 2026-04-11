@@ -1,0 +1,102 @@
+m255
+K4
+z2
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/intelFPGA/20.1
+Ecounter2bit
+Z0 w1775567983
+Z1 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 12
+Z5 dC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/project1
+Z6 8C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit.vhd
+Z7 FC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit.vhd
+l0
+L7 1
+VhaVcBMz6n23R31J@`Jn7D0
+!s100 CBLHAzHVh;CmY4;;JhG>70
+Z8 OV;C;2020.1;71
+32
+Z9 !s110 1775568031
+!i10b 1
+Z10 !s108 1775568031.000000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit.vhd|
+Z12 !s107 C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1 CvgOpt 0
+Afizzim
+R1
+R2
+R3
+R4
+Z15 DEx4 work 11 counter2bit 0 22 haVcBMz6n23R31J@`Jn7D0
+!i122 12
+l31
+L16 92
+V>ocT:;46`Hb<9RG@<=L9I1
+!s100 K^AZ6=5iS>YLm28=G:hh70
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ecounter2bit_tb
+Z16 w1775568027
+Z17 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+R3
+R4
+!i122 13
+R5
+Z18 8C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit_tb.vhd
+Z19 FC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit_tb.vhd
+l0
+L5 1
+V_MZ]no@iUXa=A:kk=8U2b3
+!s100 2dKaM342=QWXdoh[UEGT82
+R8
+32
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit_tb.vhd|
+Z21 !s107 C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/counter2bit_tb.vhd|
+!i113 1
+R13
+R14
+Abhv
+R1
+R2
+R15
+R17
+R3
+R4
+Z22 DEx4 work 14 counter2bit_tb 0 22 _MZ]no@iUXa=A:kk=8U2b3
+!i122 13
+l22
+Z23 L8 45
+V:06mA^DAl5FcD<z`aQWWV2
+!s100 CNJDJz27[cJ;ec<XzPSLC1
+R8
+32
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14

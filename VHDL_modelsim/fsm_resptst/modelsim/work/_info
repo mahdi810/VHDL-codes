@@ -1,0 +1,98 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/counter2bit_fsm/project1
+Efsm_resptst
+Z0 w1775571445
+Z1 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+Z4 dC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/modelsim
+Z5 8C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst.vhd
+Z6 FC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst.vhd
+l0
+L7 1
+VMkNZG^LeA0AWO78n2^0[<2
+!s100 Y`;L;U53;Inhi8gmQ>0Lm1
+Z7 OV;C;2020.1;71
+32
+Z8 !s110 1775573080
+!i10b 1
+Z9 !s108 1775573080.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst.vhd|
+Z11 !s107 C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Abhv
+R1
+R2
+R3
+Z14 DEx4 work 11 fsm_resptst 0 22 MkNZG^LeA0AWO78n2^0[<2
+!i122 0
+l18
+L15 92
+Vm8ei6aC8_U:OGIPTCG@3R3
+!s100 DKWeYX:9LaYk_`oWKTedA0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Efsm_resptst_tb
+Z15 w1775572069
+R1
+R2
+R3
+!i122 1
+R4
+Z16 8C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst_tb.vhd
+Z17 FC:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst_tb.vhd
+l0
+L5 1
+V:zofe:cbP]Nn4Z^_jD=KG2
+!s100 bk0nY=84aASOif2<0?<FA2
+R7
+32
+Z18 !s110 1775573081
+!i10b 1
+Z19 !s108 1775573081.000000
+Z20 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst_tb.vhd|
+!s107 C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst_tb.vhd|
+!i113 1
+R12
+R13
+Abhv
+R14
+R1
+R2
+R3
+DEx4 work 14 fsm_resptst_tb 0 22 :zofe:cbP]Nn4Z^_jD=KG2
+!i122 1
+l19
+L8 51
+VBBlIZAQQjkUa[cHMZ1>;61
+!s100 2an7YmO5FAFJ8T@h4QQWO1
+R7
+32
+R18
+!i10b 1
+R19
+R20
+Z21 !s107 C:/HOME/github/vhd code github/VHDL_codes/VHDL_modelsim/fsm_resptst/fsm_resptst_tb.vhd|
+!i113 1
+R12
+R13

@@ -1,0 +1,34 @@
+# Compile of fsm_resptst.vhd was successful.
+# Compile of fsm_resptst_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui work.fsm_resptst_tb
+# vsim -gui work.fsm_resptst_tb 
+# Start time: 16:44:50 on Apr 07,2026
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fsm_resptst_tb(bhv)
+# Loading work.fsm_resptst(bhv)
+add wave -position insertpoint  \
+sim:/fsm_resptst_tb/clk \
+sim:/fsm_resptst_tb/reset \
+sim:/fsm_resptst_tb/b0 \
+sim:/fsm_resptst_tb/b1 \
+sim:/fsm_resptst_tb/b2 \
+sim:/fsm_resptst_tb/led0 \
+sim:/fsm_resptst_tb/led1 \
+sim:/fsm_resptst_tb/led2 \
+sim:/fsm_resptst_tb/ledg \
+sim:/fsm_resptst_tb/ledr \
+sim:/fsm_resptst_tb/clk_period
+add wave -position insertpoint  \
+sim:/fsm_resptst_tb/uut/state
+run
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+run
+# image file format "bmp" is unknown
+# image file format "bmp" is unknown
+# End time: 00:36:18 on Apr 08,2026, Elapsed time: 7:51:28
+# Errors: 0, Warnings: 1
