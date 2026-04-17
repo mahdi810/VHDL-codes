@@ -58,7 +58,11 @@ begin
                     next_state <= state_parity; 
                 end if; 
             when state_parity  =>  
+<<<<<<< HEAD
                 TxD <= txdata(0) XOR txdata(1) XOR txdata(2) XOR txdata(3) XOR txdata(4) XOR txdata(5) XOR txdata(6) XOR txdata(7) XOR '1'; 
+=======
+                TxD <= txdata(0) XOR txdata(1) XOR txdata(2) XOR txdata(3) XOR txdata(4) XOR txdata(5) XOR txdata(6) XOR txdata(7); 
+>>>>>>> 19d413da98686b8f950cf200823f1feb30e15c03
                 next_state <= idle; 
         end case; 
     end process;

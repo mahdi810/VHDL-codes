@@ -45,7 +45,11 @@ begin
         begin 
             start <= '0'; 
             reset <= '1'; 
+<<<<<<< HEAD
             txdata <= x"ff"; 
+=======
+            txdata <= "01011001"; 
+>>>>>>> 19d413da98686b8f950cf200823f1feb30e15c03
             wait for clk_period * 3; 
             reset <= '0'; 
             wait for clk_period; 
