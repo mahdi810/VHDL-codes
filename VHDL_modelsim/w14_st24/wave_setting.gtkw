@@ -1,0 +1,30 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Apr 17 14:54:04 2026
+[*]
+[dumpfile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\w14_st24\wave.ghw"
+[dumpfile_mtime] "Fri Apr 17 14:53:12 2026"
+[dumpfile_size] 1680541
+[savefile] "C:\HOME\github\vhd code github\VHDL_codes\VHDL_modelsim\w14_st24\wave_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -87 -87
+*-37.549648 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.w14_st24_tb.
+[sst_width] 197
+[signals_width] 94
+[sst_expanded] 1
+[sst_vpaned_height] 221
+@28
+top.w14_st24_tb.clk
+top.w14_st24_tb.reset
+top.w14_st24_tb.camshaft
+top.w14_st24_tb.inject
+top.w14_st24_tb.spark
+@420
+top.w14_st24_tb.uut.state
+@421
+top.w14_st24_tb.uut.timer
+[pattern_trace] 1
+[pattern_trace] 0

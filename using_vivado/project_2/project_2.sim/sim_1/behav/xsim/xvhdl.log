@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/project_2/project_2.srcs/sources_1/new/w14_st24.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'w14_st24'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/HOME/github/vhd code github/VHDL_codes/using_vivado/project_2/project_2.srcs/sim_1/new/w14_st24_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'w14_st24_tb'
