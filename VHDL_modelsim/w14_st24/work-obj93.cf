@@ -1,7 +1,0 @@
-v 3
-file . "w14_st24_tb.vhd" "20260417150306.000" "20260417171117.631":
-  entity w14_st24_tb at 1( 0) + 0 on 13;
-  architecture bhv of w14_st24_tb at 8( 117) + 0 on 14;
-file . "w14_st24.vhd" "20260417151114.000" "20260417171117.631":
-  entity w14_st24 at 1( 0) + 0 on 11;
-  architecture bhv of w14_st24 at 12( 223) + 0 on 12;

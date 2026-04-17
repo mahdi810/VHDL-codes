@@ -1,0 +1,7 @@
+v 3
+file . "w23_2_tb.vhd" "20260417175554.000" "20260418001945.777":
+  entity w23_2_tb at 1( 0) + 0 on 29;
+  architecture behavioral of w23_2_tb at 8( 111) + 0 on 30;
+file . "w23_2.vhd" "20260417221944.000" "20260418001945.777":
+  entity w23_2 at 1( 0) + 0 on 27;
+  architecture behavioral of w23_2 at 13( 238) + 0 on 28;

@@ -1,41 +1,39 @@
-library ieee;
-use ieee.std_logic_1164.all;
-use ieee.numeric_std.all;
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+USE ieee.numeric_std.ALL;
 
-entity w22_3 is
-    port (
-        clk : in std_logic; 
-        y : out std_logic_vector(3 downto 0)
+ENTITY w22_3 IS
+    PORT (
+        clk : IN STD_LOGIC;
+        y : OUT STD_LOGIC_VECTOR(3 DOWNTO 0)
     );
-end w22_3;
+END w22_3;
 
-architecture bhv of w22_3 is
+ARCHITECTURE bhv OF w22_3 IS
 
-    signal q : std_logic_vector(3 downto 0) := (others => '0'); 
-    signal a, b, c, d, e : std_logic := '0';  
+    SIGNAL q : STD_LOGIC_VECTOR(3 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL a, b, c, d, e : STD_LOGIC := '0';
 
-begin
+BEGIN
 
-    a <= (NOT q(3)) AND q(2) AND q(1) AND q(0); 
-    b <= (NOT q(0)) AND a; 
-    c <= q(3) AND a; 
-    d <= q(2) AND a; 
-    e <= q(1) AND a; 
-    y(0) <= q(3); 
-    y(1) <= q(2); 
-    y(2) <= q(1); 
-    y(3) <= q(0); 
-
-
+    a <= (NOT q(3)) AND q(2) AND q(1) AND q(0);
+    b <= (NOT q(0)) AND a;
+    c <= q(3) AND a;
+    d <= q(2) AND a;
+    e <= q(1) AND a;
+    y(0) <= q(3);
+    y(1) <= q(2);
+    y(2) <= q(1);
+    y(3) <= q(0);
     --flipflops 
-    ff : process (clk)
-    begin
-        if rising_edge(clk) then 
-            q(0) <= e; 
-            q(1) <= d; 
-            q(2) <= c; 
-            q(3) <= b; 
-        end if; 
-    end process;
+    ff : PROCESS (clk)
+    BEGIN
+        IF rising_edge(clk) THEN
+            q(0) <= e;
+            q(1) <= d;
+            q(2) <= c;
+            q(3) <= b;
+        END IF;
+    END PROCESS;
 
-end bhv ; -- bhv
+END bhv; -- bhv
