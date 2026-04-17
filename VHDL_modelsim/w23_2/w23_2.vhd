@@ -40,7 +40,7 @@ BEGIN
                     next_state <= st0; 
                 end if; 
             WHEN st0 =>
-                if (u = "01" or u = "10") then 
+                if (u = "11" or u = "10") then 
                     next_state <= st1; 
                 elsif u = "01" then 
                     next_state <= st3; 
