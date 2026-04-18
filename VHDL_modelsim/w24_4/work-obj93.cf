@@ -1,0 +1,7 @@
+v 3
+file . "w24_4_tb.vhd" "20260418194952.000" "20260418215103.503":
+  entity w24_4_tb at 1( 0) + 0 on 29;
+  architecture behavioral of w24_4_tb at 8( 111) + 0 on 30;
+file . "w24_4.vhd" "20260418195048.000" "20260418215103.503":
+  entity w24_4 at 1( 0) + 0 on 27;
+  architecture behavioral of w24_4 at 12( 199) + 0 on 28;

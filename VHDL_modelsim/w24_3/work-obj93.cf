@@ -1,0 +1,7 @@
+v 3
+file . "w24_3_tb.vhd" "20260418185800.000" "20260418205829.236":
+  entity w24_3_tb at 1( 0) + 0 on 13;
+  architecture behavioral of w24_3_tb at 8( 111) + 0 on 14;
+file . "w24_3.vhd" "20260418185312.000" "20260418205829.236":
+  entity w24_3 at 1( 0) + 0 on 11;
+  architecture behavioral of w24_3 at 14( 259) + 0 on 12;
