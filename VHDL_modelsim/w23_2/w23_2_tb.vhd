@@ -40,14 +40,10 @@ BEGIN
         reset <= '0';
         WAIT FOR clk_period * 2;
 
-        u <= "01";
-        WAIT FOR clk_period * 4;
-
-        u <= "10";
-        WAIT FOR clk_period * 4;
-
         u <= "11";
         WAIT FOR clk_period * 4;
+
+        
         WAIT;
     END PROCESS stim_p;
 END behavioral; -- w23_2_tbehaviow

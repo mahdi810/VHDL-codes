@@ -20,6 +20,7 @@ run:
 clean:
 	cd "$(DIR)" && \
 	$(GHDL) --remove && \
-	del /f /q $(WAVE) 2>nul || true
+	del /f /q $(WAVE) 2>nul || true 
+# 	this is working only in windows
 
 .PHONY: run clean
