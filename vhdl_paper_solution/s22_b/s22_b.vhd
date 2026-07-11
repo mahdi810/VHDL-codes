@@ -10,7 +10,7 @@ ENTITY s22_b IS
 END ENTITY;
 
 ARCHITECTURE behavioral OF s22_b IS
-    SIGNAL q : STD_LOGIC_VECTOR(3 DOWNTO 0) := (OTHERS => '0');
+    SIGNAL q : STD_LOGIC_VECTOR(3 DOWNTO 0) := "1101";
     SIGNAL yin : STD_LOGIC_VECTOR(3 DOWNTO 0) := (OTHERS => '0');
 BEGIN
 
@@ -22,6 +22,8 @@ BEGIN
             q <= q(0) & q(3 DOWNTO 1);
             IF q = "1110" THEN
                 yin <= (OTHERS => '0');
+            ELSE
+                yin <= q;
             END IF;
         END IF;
     END PROCESS;
