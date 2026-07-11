@@ -4,6 +4,7 @@ work-obj*.cf
 *.ali
 *.exe
 *.out
+*.gtkw
 
 # Simulation waveforms
 *.vcd
