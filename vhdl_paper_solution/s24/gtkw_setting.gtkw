@@ -1,0 +1,27 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Mon Jul 06 15:41:41 2026
+[*]
+[dumpfile] "C:\HOME\SOC_VSCODE\s24\s24\wave.ghw"
+[savefile] "C:\HOME\SOC_VSCODE\s24\gtkw_setting.gtkw"
+[timestart] 0
+[size] 1536 793
+[pos] -1 -1
+*-24.618130 160500000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.s24_tb.
+[treeopen] top.s24_tb.uut.
+[sst_width] 197
+[signals_width] 122
+[sst_expanded] 1
+[sst_vpaned_height] 221
+@28
+top.s24_tb.clk
+top.s24_tb.sel
+top.s24_tb.d_in
+@24
+#{top.s24_tb.uut.q[4:0]} top.s24_tb.uut.q[4] top.s24_tb.uut.q[3] top.s24_tb.uut.q[2] top.s24_tb.uut.q[1] top.s24_tb.uut.q[0]
+@29
+#{top.s24_tb.uut.y[4:0]} top.s24_tb.uut.y[4] top.s24_tb.uut.y[3] top.s24_tb.uut.y[2] top.s24_tb.uut.y[1] top.s24_tb.uut.y[0]
+[pattern_trace] 1
+[pattern_trace] 0

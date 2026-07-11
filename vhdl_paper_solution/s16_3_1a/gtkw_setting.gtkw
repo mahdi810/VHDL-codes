@@ -1,0 +1,23 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Fri Jul 10 20:35:06 2026
+[*]
+[dumpfile] "C:\HOME\VHDL_VSCODE\s16_3_1a\s16_3_1a\wave.ghw"
+[savefile] "C:\HOME\VHDL_VSCODE\s16_3_1a\gtkw_setting.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-24.824818 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.s16_3_1a_tb.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+top.s16_3_1a_tb.clk
+top.s16_3_1a_tb.u
+@29
+#{top.s16_3_1a_tb.x[1:0]} top.s16_3_1a_tb.x[1] top.s16_3_1a_tb.x[0]
+[pattern_trace] 1
+[pattern_trace] 0
