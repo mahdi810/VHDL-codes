@@ -1,0 +1,91 @@
+# GHDL generated files
+work-obj*.cf
+*.o
+*.ali
+*.exe
+*.out
+
+# Simulation waveforms
+*.vcd
+*.ghw
+*.fst
+*.wlf
+
+# ModelSim / QuestaSim
+work/
+transcript
+vsim.wlf
+modelsim.ini
+*.log
+*.ucdb
+*.mti
+
+# Vivado generated files
+.Xil/
+*.jou
+*.str
+*.dmp
+*.pb
+*.wdb
+*.wcfg
+*.xpr
+*.runs/
+*.sim/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.gen/
+
+# Vivado project directories
+project_*/
+vivado_*/
+
+# Quartus generated files
+db/
+incremental_db/
+output_files/
+simulation/
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.sof
+*.pof
+
+# Temporary and backup files
+*~
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Python verification files
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Keep actual VHDL source files
+!*.vhd
+!*.vhdl
+
+# Keep FPGA constraint files
+!*.xdc
+!*.sdc
+!*.qsf
+
+# Keep scripts and documentation
+!*.tcl
+!*.py
+!*.md
+!Makefile
