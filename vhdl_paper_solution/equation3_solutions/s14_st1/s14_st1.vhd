@@ -1,5 +1,5 @@
 -- this circuit is the PRBS (pseudo random binary sequence generator)
--- if u = '0', then it will generate the prbs sequence 1, 8, 4, 2, 9, 12, 6, 11, 5, 10, 13, 14, 15, 7, 3, `. 
+-- if u = '0', then it will generate the prbs sequence 1, 8, 4, 2, 9, 12, 6, 11, 5, 10, 13, 14, 15, 7, 3. 
 -- if u = '1', then it will shift the number '1' inside the shift register. 
 -- this vhdl code shows the structural implementation. 
 

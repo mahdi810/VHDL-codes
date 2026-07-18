@@ -1,0 +1,90 @@
+%YAML 1.2
+---
+name: VHDL
+file_extensions:
+  - vhd
+  - vhdl
+scope: source.vhdl
+
+variables:
+  ident: '[A-Za-z][A-Za-z0-9_]*'
+
+contexts:
+  main:
+    - include: comments
+    - include: strings
+    - include: chars
+    - include: numbers
+    - include: operators
+    - include: types
+    - include: constants
+    - include: attributes
+    - include: libraries
+    - include: keywords
+    - include: functions
+    - include: labels
+    - include: identifiers
+
+  comments:
+    - match: '--.*$'
+      scope: comment.line.double-dash.vhdl
+
+  strings:
+    - match: '"'
+      scope: punctuation.definition.string.begin.vhdl
+      push:
+        - meta_scope: string.quoted.double.vhdl
+        - match: '"'
+          scope: punctuation.definition.string.end.vhdl
+          pop: true
+
+  chars:
+    - match: '''([01ZXUWLH-]|[A-Za-z])'''
+      scope: constant.character.vhdl
+
+  numbers:
+    - match: '(?i)\b\d+(?:_\d+)*(?:\.\d+(?:_\d+)*)?(?:e[+-]?\d+)?\b'
+      scope: constant.numeric.decimal.vhdl
+    - match: '(?i)\b\d+#[0-9A-F_]+#(?:e[+-]?\d+)?\b'
+      scope: constant.numeric.base.vhdl
+
+  operators:
+    - match: '<=|>=|/=|:=|=>|<>|<<|>>'
+      scope: keyword.operator.vhdl
+    - match: '[&=<>+*/-]'
+      scope: keyword.operator.vhdl
+    - match: '(?i)\b(and|or|nand|nor|xor|xnor|not|mod|rem|rol|ror|sll|srl|sla|sra)\b'
+      scope: keyword.operator.word.vhdl
+
+  types:
+    - match: '(?i)\b(bit|bit_vector|boolean|integer|natural|positive|real|time|character|string|severity_level|std_logic|std_logic_vector|std_ulogic|std_ulogic_vector|signed|unsigned)\b'
+      scope: storage.type.vhdl
+
+  constants:
+    - match: '(?i)\b(true|false|null|open|others|all)\b'
+      scope: constant.language.vhdl
+
+  attributes:
+    - match: '''(?i:(event|stable|quiet|delayed|transaction|left|right|high|low|ascending|image|value|pos|val|succ|pred|leftof|rightof|base|range|reverse_range|length))\b'
+      scope: support.constant.attribute.vhdl
+
+  libraries:
+    - match: '(?i)\b(ieee|std|work)\b'
+      scope: support.namespace.vhdl
+
+  keywords:
+    - match: '(?i)\b(entity|architecture|configuration|package|body|context|library|use|is|begin|end|of|generic|port|map|component|for|generate|if|then|elsif|else|case|when|with|select|loop|while|exit|next|wait|until|assert|report|severity|signal|variable|constant|file|type|subtype|record|array|units|access|alias|function|procedure|impure|pure|return|process|postponed|block|guarded|buffer|inout|in|out|linkage|to|downto|after|transport|inertial|reject|shared|new|on)\b'
+      scope: keyword.control.vhdl
+
+  functions:
+    - match: '(?i)\b(rising_edge|falling_edge|resize|to_integer|to_unsigned|to_signed|conv_integer|conv_unsigned|conv_std_logic_vector)\b'
+      scope: support.function.vhdl
+
+  labels:
+    - match: '^\s*({{ident}})\s*:'
+      captures:
+        1: entity.name.label.vhdl
+
+  identifiers:
+    - match: '(?i)\b{{ident}}\b'
+      scope: variable.other.vhdl
