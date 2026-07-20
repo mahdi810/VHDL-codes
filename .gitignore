@@ -90,3 +90,47 @@ venv/
 !*.py
 !*.md
 !Makefile
+
+
+# LaTeX auxiliary files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+
+# Additional generated files
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.idx
+*.ilg
+*.ind
+*.ist
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+*.xdv
+
+# Temporary and backup files
+*.bak
+*.sav
+*.tmp
+*~
+*.swp
+
+# Build directories
+build/
+out/
