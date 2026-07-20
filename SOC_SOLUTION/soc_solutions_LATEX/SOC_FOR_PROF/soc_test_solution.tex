@@ -1,0 +1,116 @@
+\documentclass[11pt, a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{amsmath, amsfonts, amssymb}
+\usepackage{mathtools}
+\usepackage{tcolorbox}
+\usepackage{fancyhdr}
+\pagenumbering{arabic}
+\usepackage{lipsum}
+\usepackage{ulem}
+\usepackage{geometry}
+\parindent 0pt
+\usepackage{float}
+\usepackage{lscape}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{multicol}
+\usepackage[hidelinks]{hyperref}
+\usepackage{bm}
+\usepackage{subfigure}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{comment}
+\usepackage{soul}
+\usepackage{fontspec}
+\usepackage{minted2}
+\usepackage{fancyvrb}
+%\setmonofont{JetBrains Mono}
+
+\renewcommand{\MintedPygmentize}{C:/Users/mmoha/AppData/Local/Programs/Python/Python314/Scripts/pygmentize.exe}
+\makeatletter
+\renewcommand{\TestAppExists}[1]{\AppExiststrue}
+\makeatother
+
+\setmonofont{Courier New}
+\setmainfont{Arial}
+
+
+\newfontfamily\codefont{Courier New}[Scale=1]
+
+\renewcommand{\theFancyVerbLine}{%
+    {\codefont\small\arabic{FancyVerbLine}}%
+}
+
+% \setminted{
+%     linenos,
+%     fontsize=\small
+% }
+%\setminted{
+%  bgcolor=lightgray,
+%  breaklines=true,
+%  tabsize=4,
+%  linenos
+%}
+
+\setminted{
+    bgcolor=lightgray,
+    fontsize=\footnotesize,
+    breaklines=true,
+    breakanywhere=false,
+    tabsize=4,
+    linenos=true,
+    numbersep=5pt
+}
+
+%dependencies from mert 
+\usepackage[capitalize]{cleveref}
+\usepackage{color}
+\usepackage{tcolorbox}
+
+
+\definecolor{lightgray}{gray}{0.95}
+\usepackage{witharrows} %for using the arrows inside math mode.
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,fit} 
+\AtBeginEnvironment{minted}{
+	\renewcommand{\itshape}{}}
+
+
+\geometry{margin = 2cm}
+% \pagestyle{fancy}
+% \fancyhf{}
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}} % Remove section numbers
+\renewcommand{\subsectionmark}[1]{\markright{#1}{}} % Remove subsection numbers
+% \fancyhead[L]{\leftmark}
+% \fancyfoot[C]{\thepage}
+% \renewcommand{\headrulewidth}{0.3 pt}
+% \renewcommand{\footrulewidth}{0.3 pt}
+
+\begin{document}
+\section{\texttt{$y^3$} calculation}
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
